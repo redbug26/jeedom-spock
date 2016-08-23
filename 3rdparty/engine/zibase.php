@@ -21,6 +21,7 @@ if (!socket_bind($sock, "0.0.0.0", 19999)) {
 }
 
 socket_set_option($sock, SOL_SOCKET, SO_BROADCAST, 1);
+socket_set_option($sock, SOL_SOCKET, SO_RCVTIMEO, array("sec" => 5, "usec" => 0));
 
 $header = "ZSIG";
 $command = 8;

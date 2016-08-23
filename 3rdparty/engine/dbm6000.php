@@ -1,5 +1,7 @@
 <?php
 
+echo json_encode($rows);exit;
+
 error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 libxml_use_internal_errors(true);
